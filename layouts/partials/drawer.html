@@ -22,12 +22,12 @@
         <ul class="repo">
           <li class="repo-download">
             <a href="{{ .Site.Params.repo_url }}/archive/master.zip" target="_blank" title="Download" data-action="download">
-              <i class="icon icon-download"></i> Download
+              <i class="icon icon-download"></i> 下载
             </a>
           </li>
           <li class="repo-stars">
             <a href="{{ .Site.Params.repo_url }}/stargazers" target="_blank" title="Stargazers" data-action="star">
-              <i class="icon icon-star"></i> Stars
+              <i class="icon icon-star"></i> 星星！
               <span class="count">&ndash;</span>
             </a>
           </li>
@@ -44,13 +44,13 @@
 
         {{ if isset .Site.Params "author" }}
         <hr>
-        <span class="section">The author</span>
+        <span class="section">作者</span>
         
         <ul>
           {{ with .Site.Social.twitter }}
           <li>
             <a href="https://twitter.com/{{ . }}" target="_blank" title="@{{ . }} on Twitter">
-              @{{ . }} on Twitter
+              Twitter：@{{ . }}
             </a>
           </li>
           {{ end }}
@@ -58,7 +58,7 @@
           {{ with .Site.Social.github }}
           <li>
             <a href="https://github.com/{{ . }}" target="_blank" title="@{{ . }} on GitHub">
-              @{{ . }} on GitHub
+              Github：@{{ . }}
             </a>
           </li>
           {{ end }}
@@ -66,7 +66,7 @@
           {{ with .Site.Social.email }}
           <li>
             <a href="mailto:{{ . }}" title="Email of {{ . }}">
-              Contact via email
+              邮件联系
             </a>
           </li>
           {{ end }}
